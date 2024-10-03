@@ -1,5 +1,6 @@
 import { CustomDock } from "@/components/CustomDock";
 import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 
 
@@ -19,16 +20,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <>
-            <div className="container">
+        <ThemeProvider attribute="class" defaultTheme="light">
 
+            <div className="container">
                 <Header />
             </div>
             {children}
             <div>
-
-            <CustomDock/>                   
+                <CustomDock />
             </div>
-        </>
+        </ThemeProvider>
     );
 }
