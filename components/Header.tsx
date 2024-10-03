@@ -10,7 +10,7 @@ const Header = () => {
     };
 
     return (
-        <header className="md:py-5">
+        <header className="md:py-5 md:px-5">
             <div className="md:rounded-[50px] max-w-7xl mx-auto sm:px-6  bg-white px-4 lg:px-6 py-2.5 dark:bg-black" >
                 <div className="flex h-16 w-full">
                     <div className="flex w-full justify-between md:px-8 ">
@@ -19,32 +19,32 @@ const Header = () => {
                             <span className="dark:text-white text-black">Manas Khandelwal</span>
                         </Link>
                         {/* Desktop Navigation */}
-                        <div className="hidden md:flex md:ml-6 md:space-x-8 fl">
-                            <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 lg:mt-0">
+                        <div className="hidden lg:flex lg:ml-6 lg:space-x-8 fl">
+                            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                 {/* <li className="flex">
                                     <Link href="" className="self-center pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Home</Link>
                                 </li> */}
                                 <li className="flex">
-                                    <Link href="/about-me" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Me</Link>
+                                    <Link href="/about-me" className="self-center flex-shrink-0 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Me</Link>
                                 </li>
                                 <li className="flex">
-                                    <Link href="/projects" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Projects</Link>
+                                    <Link href="/projects" className="self-center flex-shrink-0 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Projects</Link>
                                 </li>
                                 <li className="flex">
-                                    <Link href="/skills" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Skills</Link>
+                                    <Link href="/skills" className="self-center flex-shrink-0 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Skills</Link>
                                 </li>
                                 <li className="flex">
-                                    <Link href="/experience" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Experience </Link>
+                                    <Link href="/experience" className="self-center flex-shrink-0 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Experience </Link>
                                 </li>
                                 
                                 <li className="flex">
-                                    <Link href="/contact" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+                                    <Link href="/contact" className="self-center flex-shrink-0 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     {/* Mobile Toggle Button */}
-                    <div className="flex items-center md:hidden">
+                    <div className="flex items-center lg:hidden">
                         <button
                             type="button"
                             className="text-gray-700 hover:text-blue-500 focus:outline-none focus:text-blue-500"
@@ -60,27 +60,27 @@ const Header = () => {
 
             {/* Mobile Navigation */}
             {isOpen && (
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 bg-black">
                         <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 lg:mt-0">
                                 {/* <li className="flex">
                                     <Link href="" className="self-center pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Home</Link>
                                 </li> */}
                                 <li className="flex">
-                                    <Link href="/about-me" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Me</Link>
+                                    <Link href="/about-me" className="self-center text-white hover:text-black pr-4 pl-3 hover:bg-gray-50 dark:text-gray-400  dark:hover:bg-gray-700 dark:border-gray-700">About Me</Link>
                                 </li>
                                 <li className="flex">
-                                    <Link href="/projects" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Projects</Link>
+                                    <Link href="/projects" className="self-center text-white hover:text-black pr-4 pl-3 hover:bg-gray-50 dark:text-gray-400  dark:hover:bg-gray-700 dark:border-gray-700">Projects</Link>
                                 </li>
                                 <li className="flex">
-                                    <Link href="/skills" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Skills</Link>
+                                    <Link href="/skills" className="self-center text-white hover:text-black pr-4 pl-3 hover:bg-gray-50 dark:text-gray-400  dark:hover:bg-gray-700 dark:border-gray-700">Skills</Link>
                                 </li>
                                 <li className="flex">
-                                    <Link href="/experience" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Experience </Link>
+                                    <Link href="/experience" className="self-center text-white hover:text-black pr-4 pl-3 hover:bg-gray-50 dark:text-gray-400  dark:hover:bg-gray-700 dark:border-gray-700">Experience </Link>
                                 </li>
                                 
                                 <li className="flex">
-                                    <Link href="/contact" className="self-center pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+                                    <Link href="/contact" className="self-center text-white hover:text-black pr-4 pl-3 hover:bg-gray-50 dark:text-gray-400  dark:hover:bg-gray-700 dark:border-gray-700">Contact</Link>
                                 </li>
                             </ul>
                     </div>
