@@ -1,6 +1,8 @@
 import React from 'react'
 import BlurFade from "@/components/ui/blur-fade";
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 const Home = () => {
     return (
@@ -20,9 +22,18 @@ const Home = () => {
                                     Frontend Developer Crafting Intuitive Web Applications
                                 </span>
                             </BlurFade>
-                            <BlurFade delay={0.25 * 2.5} inView>
+                            <BlurFade delay={0.25 * 2.5} inView className='mb-8'>
                                 <span className="md:text-lg text-sm text-pretty tracking-tighter leading-snug ">
-                                Associate Software Engineer with experience in Angular, React, and modern UI frameworks. Passionate about building dynamic, user-friendly web applications.</span>
+                                    Associate Software Engineer with experience in Angular, React, and modern UI frameworks. Passionate about building dynamic, user-friendly web applications.
+                                </span>
+                            </BlurFade>
+                            <BlurFade delay={0.25 * 2.8} inView className='flex max-md:justify-center'>
+                                <Button className='px-6 py-5 group '>
+                                    <a rel='nofollow' className='flex align-middle text-[15px]' target='_blank' href="https://www.linkedin.com/in/manaskh">Connect with me <ArrowTopRightIcon width={18} height={18} className='transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-1 '/></a>
+                                </Button>
+                                <Button variant='outline' className='px-6 py-5 ml-8 dark:border-white/50 border-slate-700'>
+                                    <a className='flex align-middle text-[15px]'  href="https://shorturl.at/mytqO">Download my resume</a>
+                                </Button>
                             </BlurFade>
                         </div>
                         <BlurFade delay={0.25 * 1.5} inView className='max-md:order-1 max-md:mb-3 max-md:flex max-md:justify-center'>

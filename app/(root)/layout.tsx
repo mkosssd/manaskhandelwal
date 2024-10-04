@@ -20,12 +20,16 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark">
 
-            <div className="container">
-                <Header />
+            <div className=" fixed top-0 w-full z-10">
+                <div className="container">
+                    <Header />
+                </div>
             </div>
-            {children}
+            <div className="mt-[90px] relative">
+                {children}
+            </div>
             <div>
                 <CustomDock />
             </div>

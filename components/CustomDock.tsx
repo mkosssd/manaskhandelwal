@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -63,29 +63,29 @@ const Icons = {
 
 const DATA = {
     navbar: [
-        { href: "#", icon: HomeIcon, label: "Home" },
-        { href: "#", icon: PencilIcon, label: "Blog" },
+        { href: "/", icon: HomeIcon, label: "Home" },
+        // { href: "", icon: PencilIcon, label: "Blog" },
     ],
     contact: {
         social: {
             GitHub: {
                 name: "GitHub",
-                url: "#",
+                url: "https://github.com/mkosssd",
                 icon: Icons.github,
             },
             LinkedIn: {
                 name: "LinkedIn",
-                url: "#",
+                url: "https://www.linkedin.com/in/manaskh",
                 icon: Icons.linkedin,
             },
             X: {
                 name: "X",
-                url: "#",
+                url: "https://x.com/__foolpool__",
                 icon: Icons.x,
             },
             email: {
                 name: "Send Email",
-                url: "#",
+                url: "mailto:manaskies19@gmail.com",
                 icon: Icons.email,
             },
         },
@@ -94,64 +94,65 @@ const DATA = {
 
 export function CustomDock() {
     return (
-
-        <TooltipProvider>
-            <Dock direction="middle">
-                {DATA.navbar.map((item) => (
-                    <DockIcon key={item.label}>
+        <div className="   inset-x-0 fixed bottom-0 mb-6">
+            <TooltipProvider>
+                <Dock direction="middle" className="dark:border-stone-400 border-2 rounded-[50px] border-black">
+                    {DATA.navbar.map((item) => (
+                        <DockIcon key={item.label}>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Link
+                                        href={item.href}
+                                        aria-label={item.label}
+                                        className={cn(
+                                            buttonVariants({ variant: "ghost", size: "icon" }),
+                                            "size-12 rounded-full",
+                                        )}
+                                    >
+                                        <item.icon className="size-4" />
+                                    </Link>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>{item.label}</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </DockIcon>
+                    ))}
+                    <Separator orientation="vertical" className="h-full dark:bg-white bg-black " />
+                    {Object.entries(DATA.contact.social).map(([name, social]) => (
+                        <DockIcon key={name}>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Link
+                                        href={social.url}
+                                        aria-label={social.name}
+                                        className={cn(
+                                            buttonVariants({ variant: "ghost", size: "icon" }),
+                                            "size-12 rounded-full",
+                                        )}
+                                    >
+                                        <social.icon className="size-4" />
+                                    </Link>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>{name}</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </DockIcon>
+                    ))}
+                    <Separator orientation="vertical" className="h-full py-2 dark:bg-white bg-black" />
+                    <DockIcon>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link
-                                    href={item.href}
-                                    aria-label={item.label}
-                                    className={cn(
-                                        buttonVariants({ variant: "ghost", size: "icon" }),
-                                        "size-12 rounded-full",
-                                    )}
-                                >
-                                    <item.icon className="size-4" />
-                                </Link>
+                                <ModeToggle />
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>{item.label}</p>
+                                <p>Theme</p>
                             </TooltipContent>
                         </Tooltip>
                     </DockIcon>
-                ))}
-                <Separator orientation="vertical" className="h-full" />
-                {Object.entries(DATA.contact.social).map(([name, social]) => (
-                    <DockIcon key={name}>
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <Link
-                                    href={social.url}
-                                    aria-label={social.name}
-                                    className={cn(
-                                        buttonVariants({ variant: "ghost", size: "icon" }),
-                                        "size-12 rounded-full",
-                                    )}
-                                >
-                                    <social.icon className="size-4" />
-                                </Link>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                                <p>{name}</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </DockIcon>
-                ))}
-                <Separator orientation="vertical" className="h-full py-2" />
-                <DockIcon>
-                    <Tooltip>
-                        <TooltipTrigger asChild>
-                            <ModeToggle />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                            <p>Theme</p>
-                        </TooltipContent>
-                    </Tooltip>
-                </DockIcon>
-            </Dock>
-        </TooltipProvider>
+                </Dock>
+            </TooltipProvider>
+        </div>
     );
 }
