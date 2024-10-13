@@ -7,7 +7,10 @@
     text-wrap: balance;
   }
   .container {
-    @apply max-w-screen-lg mx-auto;
+    @apply max-w-screen-xl md:px-3 px-5  mx-auto;
+  }
+  .para {
+    @apply mb-3 text-base;
   }
 }
 

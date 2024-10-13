@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <section className='py-10 '>
-                <div className="container px-3">
+                <div className="container md:px-3 px-4">
                     <div className="flex justify-between align-middle max-md:flex-col">
                         <div className='max-md:order-2 max-md:text-center'>
                             <BlurFade delay={0.25} inView className='md:mb-3'>
@@ -22,7 +22,7 @@ const Home = () => {
                                     Frontend Developer Crafting Intuitive Web Applications
                                 </span>
                             </BlurFade>
-                            <BlurFade delay={0.25 * 2.5} inView className='mb-8'>
+                            <BlurFade delay={0.25 * 2.5} inView className='mb-12'>
                                 <span className="md:text-lg text-sm text-pretty tracking-tighter leading-snug ">
                                     Associate Software Engineer with experience in Angular, React, and modern UI frameworks. Passionate about building dynamic, user-friendly web applications.
                                 </span>

@@ -23,11 +23,11 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
 
             <div className=" fixed top-0 w-full z-10">
-                <div className="container">
+                <div className="">
                     <Header />
                 </div>
             </div>
-            <div className="mt-[90px] relative">
+            <div className="md:mt-[100px] mt-[70px] relative">
                 {children}
             </div>
             <div>
