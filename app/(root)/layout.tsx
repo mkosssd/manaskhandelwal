@@ -27,7 +27,7 @@ export default function RootLayout({
                     <Header />
                 </div>
             </div>
-            <div className="md:mt-[100px] mt-[70px] relative">
+            <div className="mt-[65px] relative">
                 {children}
             </div>
             <div>

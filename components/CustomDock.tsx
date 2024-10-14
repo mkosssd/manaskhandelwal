@@ -94,7 +94,7 @@ const DATA = {
 
 export function CustomDock() {
     return (
-        <div className="   inset-x-0 fixed bottom-0 mb-6">
+        <div className="w-fit mx-auto inset-x-0 fixed bottom-0 mb-6">
             <TooltipProvider>
                 <Dock direction="middle" className="dark:border-stone-400 border-2 rounded-[50px] border-black">
                     {DATA.navbar.map((item) => (
