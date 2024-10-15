@@ -1,7 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next';
 import Image from 'next/image';
-import * as experiences from '@/assets/json/Experiences.json'
+import experiences from '@/assets/json/Experiences.json'
 import { cn } from '@/lib/utils';
 export const metadata: Metadata = {
     title: "Experience",

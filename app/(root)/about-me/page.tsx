@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { CustomIconCloud } from '@/components/CustomIconCloud';
 import { Button } from '@/components/ui/button';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
-import * as skills from '@/assets/json/skills.json'
+import skills from '@/assets/json/skills.json'
 import { Badge } from '@/components/ui/badge';
 export const metadata: Metadata = {
     title: "About Me",
