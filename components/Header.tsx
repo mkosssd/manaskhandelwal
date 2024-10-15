@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <header>
-            <div className="shadow dark:shadow-white/20  mx-auto   bg-white dark:bg-black" >
+            <div className="shadow dark:shadow-white/20  mx-auto backdrop-blur-sm " >
                 <div className="container" >
                     <div className="flex h-16">
                         <div className="flex w-full justify-between ">
