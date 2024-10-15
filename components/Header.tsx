@@ -22,7 +22,7 @@ const Header = () => {
                             <div className="hidden lg:flex lg:ml-6 lg:space-x-8 fl">
                                 <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                     <ActiveLink href="/about-me">About Me</ActiveLink>
-                                    <ActiveLink href="/projects">Projects</ActiveLink>
+                                    {/* <ActiveLink href="/projects">Projects</ActiveLink> */}
                                     <ActiveLink href="/experience">Experience</ActiveLink>
                                 </ul>
                             </div>
@@ -48,7 +48,7 @@ const Header = () => {
                     <div className="px-2 pt-2 pb-3 space-y-1 bg-black">
                         <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 lg:mt-0">
                             <ActiveLink href="/about-me">About Me</ActiveLink>
-                            <ActiveLink href="/projects">Projects</ActiveLink>
+                            {/* <ActiveLink href="/projects">Projects</ActiveLink> */}
                             <ActiveLink href="/experience">Experience</ActiveLink>
                         </ul>
                     </div>
