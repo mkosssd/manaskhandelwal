@@ -12,7 +12,7 @@ function page() {
         <>
             <section className='py-10'>
                 <div className="container">
-                    <div className='text-center'>
+                    <div className='max-md:text-center'>
                         <h1 className='text-4xl font-albert-sans font-bold'>Experience</h1>
                     </div>
                 </div>
