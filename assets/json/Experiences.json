@@ -1,41 +1,58 @@
 [
-	{
-		"companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/670ea10b001fefc93da8/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3",
-		"jobTitle": "Associate Software Engineer",
-		"company": "Success Ladder Technologies",
-		"location": "Alwar, India",
-		"period": "NOV 2023 – Present",
-		"responsibilities": [
-			"At Success Ladder Technologies, I contribute to developing scalable and high-performance web applications using various frontend technologies. Working closely with cross-functional teams, I focus on building user-centric features while optimizing web performance.",
-			"Engineered scalable web applications using Angular and Bootstrap, increasing user engagement by 40% and reducing page load time by 25%.",
-			"Optimized data-fetching mechanisms using Firebase Realtime Database, improving backend performance by 30%.",
-			"Led the implementation of responsive design principles, resulting in a 15% increase in user satisfaction.",
-			"Collaborated in Agile teams to ensure the timely delivery of projects, consistently meeting deadlines and staying within budget."
-		]
-	},
-	{
-		"companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/670ea10b001fefc93da8/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3",
-		"jobTitle": "SWE Intern",
-		"company": "Success Ladder Technologies",
-		"location": "Alwar, India",
-		"period": "AUG 2023 – NOV 2023",
-		"responsibilities": [
-			"During my internship, I worked on enhancing the front-end components of various web applications, gaining hands-on experience in React and Angular. This experience deepened my understanding of front-end development and best coding practices.",
-			"Developed reusable front-end components and integrated RESTful APIs, contributing to a 10% improvement in application responsiveness.",
-			"Participated in code reviews and implemented best practices, leading to a 20% reduction in post-release bugs.",
-			"Collaborated with senior developers to design and implement new features, building proficiency in Agile methodologies."
-		]
-	},
-	{
-		"companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/670ead79000938a3d90e/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
-		"jobTitle": "Full Stack Web Development Intern",
-		"company": "Postulate Infotech",
-		"location": "Remote",
-		"period": "JUN 2023 – JUL 2023",
-		"responsibilities": [
-			"At Postulate Infotech, I played a key role in the development of a social media platform called MindShare. Using Angular, Bootstrap, and Firebase for the backend, I helped create a responsive and feature-rich application that supports real-time interactions and scalable user management.",
-			"Led the frontend development of MindShare, a social media platform, using Angular and Bootstrap, resulting in a user-friendly interface that supports real-time user interactions.",
-			"Integrated Firebase for backend services, implementing features such as real-time messaging, authentication, and database management."
-		]
-	}
+    {
+        "companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b1bf400294280aa72/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
+        "jobTitle": "SDE-1",
+        "company": "Tractor Junction",
+        "location": "Alwar, India",
+        "period": "DEC 2024 – Present",
+        "responsibilities": [
+            "At Tractor Junction, I contribute to developing high-performance mobile applications using React Native, focusing on creating seamless and responsive user experiences.",
+            "Built and maintained cross-platform mobile applications for both iOS and Android devices.",
+            "Developed reusable and optimized UI components, ensuring a consistent and high-quality user interface.",
+            "Integrated APIs to enable smooth communication between frontend and backend systems.",
+            "Ensured application performance and responsiveness across various devices, improving user engagement.",
+            "Debugged and resolved technical issues, enhancing application stability and reliability.",
+            "Collaborated closely with cross-functional teams to design, develop, and deploy new features.",
+            "Conducted code reviews and implemented best practices to maintain clean, efficient, and scalable code."
+        ]
+    },
+    {
+        "companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/670ea10b001fefc93da8/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3",
+        "jobTitle": "Associate Software Engineer",
+        "company": "Success Ladder Technologies",
+        "location": "Alwar, India",
+        "period": "NOV 2023 – DEC 2024",
+        "responsibilities": [
+            "At Success Ladder Technologies, I contribute to developing scalable and high-performance web applications using various frontend technologies. Working closely with cross-functional teams, I focus on building user-centric features while optimizing web performance.",
+            "Engineered scalable web applications using Angular and Bootstrap, increasing user engagement by 40% and reducing page load time by 25%.",
+            "Optimized data-fetching mechanisms using Firebase Realtime Database, improving backend performance by 30%.",
+            "Led the implementation of responsive design principles, resulting in a 15% increase in user satisfaction.",
+            "Collaborated in Agile teams to ensure the timely delivery of projects, consistently meeting deadlines and staying within budget."
+        ]
+    },
+    {
+        "companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/670ea10b001fefc93da8/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3",
+        "jobTitle": "SWE Intern",
+        "company": "Success Ladder Technologies",
+        "location": "Alwar, India",
+        "period": "AUG 2023 – NOV 2023",
+        "responsibilities": [
+            "During my internship, I worked on enhancing the front-end components of various web applications, gaining hands-on experience in React and Angular. This experience deepened my understanding of front-end development and best coding practices.",
+            "Developed reusable front-end components and integrated RESTful APIs, contributing to a 10% improvement in application responsiveness.",
+            "Participated in code reviews and implemented best practices, leading to a 20% reduction in post-release bugs.",
+            "Collaborated with senior developers to design and implement new features, building proficiency in Agile methodologies."
+        ]
+    },
+    {
+        "companyLogo": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/670ead79000938a3d90e/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
+        "jobTitle": "Full Stack Web Development Intern",
+        "company": "Postulate Infotech",
+        "location": "Remote",
+        "period": "JUN 2023 – JUL 2023",
+        "responsibilities": [
+            "At Postulate Infotech, I played a key role in the development of a social media platform called MindShare. Using Angular, Bootstrap, and Firebase for the backend, I helped create a responsive and feature-rich application that supports real-time interactions and scalable user management.",
+            "Led the frontend development of MindShare, a social media platform, using Angular and Bootstrap, resulting in a user-friendly interface that supports real-time user interactions.",
+            "Integrated Firebase for backend services, implementing features such as real-time messaging, authentication, and database management."
+        ]
+    }
 ]

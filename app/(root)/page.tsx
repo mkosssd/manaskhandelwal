@@ -24,15 +24,15 @@ const Home = () => {
                             </BlurFade>
                             <BlurFade delay={0.25 * 2.5} inView className='mb-12'>
                                 <span className="md:text-lg text-sm text-pretty tracking-tighter leading-snug ">
-                                    Associate Software Engineer with experience in Angular, React, and modern UI frameworks. Passionate about building dynamic, user-friendly web applications.
+                                    SDE-1 with expertise in React Native, Angular, and frontend development. Passionate about creating responsive, scalable mobile and web applications focused on user experience and performance optimization.
                                 </span>
                             </BlurFade>
                             <BlurFade delay={0.25 * 2.8} inView className='flex max-md:justify-center'>
                                 <Button className='px-6 py-5 group '>
-                                    <a rel='nofollow' className='flex align-middle text-[15px]' target='_blank' href="https://www.linkedin.com/in/manaskh">Connect with me <ArrowTopRightIcon width={18} height={18} className='transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-1 '/></a>
+                                    <a rel='nofollow' className='flex align-middle text-[15px]' target='_blank' href="https://www.linkedin.com/in/manaskh">Connect with me <ArrowTopRightIcon width={18} height={18} className='transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-1 ' /></a>
                                 </Button>
                                 <Button variant='outline' className='px-6 py-5 ml-8 dark:border-white/50 border-slate-700'>
-                                    <a className='flex align-middle text-[15px]'  href="https://shorturl.at/mytqO">Download my resume</a>
+                                    <a className='flex align-middle text-[15px]' href="https://shorturl.at/mytqO">Download my resume</a>
                                 </Button>
                             </BlurFade>
                         </div>

@@ -1,0 +1,90 @@
+[
+    {
+        "projectImage": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b2e3e0001b47e1f76/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
+        "projectName": "AnyWhere App - An Ecommerce Site",
+        "skills": "Angular, Bootstrap, HTML, SCSS, Firebase",
+        "description": "Anywhere App is a feature-rich E-commerce website designed using Angular, delivering a mobile-responsive and user-friendly shopping experience. The application incorporates Firebase for backend services and Bootstrap for a polished, responsive UI.",
+        "points": [
+            {
+                "name": "Product Browsing",
+                "description": "Offers an intuitive interface to explore a wide range of products."
+            },
+            {
+                "name": "Advanced Filters",
+                "description": "Enables users to filter products by price (low to high or high to low) and categories."
+            },
+            {
+                "name": "Responsive Design",
+                "description": "Built with Bootstrap to ensure a seamless experience across devices."
+            },
+            {
+                "name": "Shopping Cart",
+                "description": "Includes a cart feature stored in local storage for uninterrupted shopping sessions."
+            },
+            {
+                "name": "User Authentication",
+                "description": "Features secure login and registration modules with separate pages for each."
+            },
+            {
+                "name": "Firebase Integration",
+                "description": "Utilizes Firebase for scalable backend services, including real-time database and authentication."
+            },
+            {
+                "name": "Admin Panel",
+                "description": "Provides administrators with tools to add, edit, or delete products efficiently."
+            }
+        ],
+        "urls": [
+            {
+                "label": "AnyWhere App",
+                "url": "https://anywhere-ecom.netlify.app/"
+            },
+            {
+                "label": "Admin Panel AnyWhere App",
+                "url": "https://admin-anywhere.netlify.app/"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b2e31003db029ed14/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
+        "projectName": "MindShare - Social Media Site ",
+        "skills": "Angular, Bootstrap, HTML, SCSS, Firebase",
+        "description": "MindShare is a Social Media Application built using Angular, offering a dynamic and interactive user experience. The application leverages Firebase for backend services and focuses on seamless engagement and customization for users.",
+        "points": [
+            {
+                "name": "User Authentication",
+                "description": "Features secure login and registration modules powered by Firebase Authentication."
+            },
+            {
+                "name": "Customizable User Profiles",
+                "description": "Allows users to personalize their profiles with ease."
+            },
+            {
+                "name": "Photo Upload and Storage",
+                "description": "Integrated Firebase Storage for uploading and storing images."
+            },
+            {
+                "name": "Responsive Design",
+                "description": "Built with Angular and Bootstrap for an intuitive and visually appealing interface."
+            },
+            {
+                "name": "Real-Time Data Handling",
+                "description": "Utilizes Firebase for APIs and data storage, ensuring fast and reliable interaction."
+            },
+            {
+                "name": "Firebase Integration",
+                "description": "Utilizes Firebase for scalable backend services, including real-time database and authentication."
+            }
+        ],
+        "urls": [
+            {
+                "label": "AnyWhere App",
+                "url": "https://anywhere-ecom.netlify.app/"
+            },
+            {
+                "label": "Admin Panel AnyWhere App",
+                "url": "https://admin-anywhere.netlify.app/"
+            }
+        ]
+    }
+]
