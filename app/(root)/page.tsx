@@ -19,7 +19,7 @@ const Home = () => {
                             </BlurFade>
                             <BlurFade delay={0.25 * 2} className='mb-2' inView>
                                 <span className="md:text-2xl text-lg text-pretty tracking-tighter ">
-                                    Frontend Developer Crafting Intuitive Web Applications
+                                    Frontend Developer Crafting Intuitive Web & Mobile Applications
                                 </span>
                             </BlurFade>
                             <BlurFade delay={0.25 * 2.5} inView className='mb-12'>
