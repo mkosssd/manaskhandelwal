@@ -3,13 +3,30 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import experiences from '@/assets/json/Experiences.json'
 import { cn } from '@/lib/utils';
+import Script from 'next/script';
 export const metadata: Metadata = {
     title: "Experience",
-    description: "Experience - Manas Khandelwal",
+    description: "Work experience of Manas Khandelwal as a frontend developer in web and mobile application development.",
 };
 function page() {
     return (
         <>
+            <Script
+                id="experience-jsonld"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ProfilePage",
+                        name: "Experience - Manas Khandelwal",
+                        url: "https://manas-khandelwal.vercel.app/experience",
+                        description:
+                            "Professional experience of Manas Khandelwal as a frontend developer working on production applications.",
+                    }),
+                }}
+            />
+
             <section className='py-10'>
                 <div className="container">
                     <div className='max-md:text-center'>

@@ -3,10 +3,33 @@ import BlurFade from "@/components/ui/blur-fade";
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
+import Script from 'next/script';
+import skills from '@/assets/json/skills.json'
+
+
 
 const Home = () => {
     return (
         <>
+            <Script
+                id="person-jsonld"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Person",
+                        name: "Manas Khandelwal",
+                        url: "https://manas-khandelwal.vercel.app",
+                        jobTitle: "Frontend Developer",
+                        sameAs: [
+                            "https://www.linkedin.com/in/manaskh",
+                            "https://github.com/mkosssd",
+                        ],
+                        knowsAbout: skills,
+                    }),
+                }}
+            />
             <section className='py-10 '>
                 <div className="container md:px-3 px-4">
                     <div className="flex justify-between align-middle max-md:flex-col">
