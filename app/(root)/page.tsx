@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
 import BlurFade from "@/components/ui/blur-fade";
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { ArrowTopRightIcon } from '@radix-ui/react-icons';
-import Script from 'next/script';
-import skills from '@/assets/json/skills.json'
-
-
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import Script from "next/script";
+import skills from "@/assets/json/skills.json";
 
 const Home = () => {
     return (
         <>
+            {/* JSON-LD */}
             <Script
                 id="person-jsonld"
                 type="application/ld+json"
@@ -24,49 +23,105 @@ const Home = () => {
                         jobTitle: "Frontend Developer",
                         sameAs: [
                             "https://www.linkedin.com/in/manaskh",
-                            "https://github.com/mkosssd",
+                            "https://github.com/mkosssd"
                         ],
-                        knowsAbout: skills,
-                    }),
+                        knowsAbout: skills
+                    })
                 }}
             />
-            <section className='py-10 '>
-                <div className="container md:px-3 px-4">
-                    <div className="flex justify-between align-middle max-md:flex-col">
-                        <div className='max-md:order-2 max-md:text-center'>
-                            <BlurFade delay={0.25} inView className='md:mb-3'>
-                                <h1 className="md:text-3xl text-xl font-bold font-albert-sans tracking-tighter ">
-                                    Hey, I am <span className=' sm:text-5xl xl:text-6xl/none text-4xl block text-[#937ee9]'>Manas Khandelwal </span>
-                                </h1>
 
+            {/* Hero Section */}
+            <section className="relative py-20 overflow-hidden">
+                {/* Subtle background glow */}
+                <div className="absolute inset-0 -z-10 bg-gradient-to-b from-violet-500/10 via-transparent to-transparent" />
+
+                <div className="container px-4 md:px-3">
+                    <div className="grid md:grid-cols-2 gap-10 items-center">
+                        {/* Left Content */}
+                        <div className="max-md:text-center">
+                            <BlurFade delay={0.2} inView>
+                                <p className="text-sm uppercase tracking-widest text-violet-500 font-medium mb-3">
+                                    Frontend Developer
+                                </p>
                             </BlurFade>
-                            <BlurFade delay={0.25 * 2} className='mb-2' inView>
-                                <h2 className="md:text-2xl text-lg text-pretty tracking-tighter ">
-                                    Frontend Developer Crafting Intuitive Web & Mobile Applications
+
+                            <BlurFade delay={0.3} inView>
+                                <h1 className="font-albert-sans font-bold tracking-tight">
+                                    <span className="block text-3xl md:text-4xl">
+                                        Hey, I’m
+                                    </span>
+                                    <span className="block text-4xl sm:text-5xl xl:text-6xl text-[#937ee9]">
+                                        Manas Khandelwal
+                                    </span>
+                                </h1>
+                            </BlurFade>
+
+                            <BlurFade delay={0.45} inView>
+                                <h2 className="mt-4 text-lg md:text-2xl text-neutral-700 dark:text-neutral-300">
+                                    Crafting intuitive web & mobile applications
                                 </h2>
                             </BlurFade>
-                            <BlurFade delay={0.25 * 2.5} inView className='mb-12'>
-                                <span className="md:text-lg text-sm text-pretty tracking-tighter leading-snug ">
-                                    SDE-1 with expertise in React Native, Angular, and frontend development, passionate about building responsive and scalable mobile and web applications with a strong focus on user experience and performance optimization.
-                                </span>
+
+                            <BlurFade delay={0.6} inView>
+                                <p className="mt-5 max-w-xl text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed mx-auto md:mx-0">
+                                    SDE-1 specializing in React Native and Angular, focused on building
+                                    scalable, high-performance web and mobile applications with
+                                    exceptional user experience.
+                                </p>
                             </BlurFade>
-                            <BlurFade delay={0.25 * 2.8} inView className='flex max-md:justify-center'>
-                                <Button className='px-6 py-5 group '>
-                                    <a rel='nofollow' className='flex align-middle text-[15px]' target='_blank' href="https://www.linkedin.com/in/manaskh">Connect with me <ArrowTopRightIcon width={18} height={18} className='transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-1 ' /></a>
-                                </Button>
-                                <Button variant='outline' className='px-6 py-5 ml-8 dark:border-white/50 border-slate-700'>
-                                    <a target='_blank' className='flex align-middle text-[15px]' href="https://drive.google.com/file/d/1MU7ha8DnVSH2nCbZ5SbFYlQwvPGpag5z/view?usp=sharing">Download my resume</a>
-                                </Button>
+
+                            <BlurFade delay={0.75} inView>
+                                <div className="mt-8 flex gap-4 max-md:justify-center">
+                                    <Button className="px-6 py-5 group">
+                                        <a
+                                            rel="nofollow"
+                                            target="_blank"
+                                            href="https://www.linkedin.com/in/manaskh"
+                                            className="flex items-center gap-1 text-[15px]"
+                                        >
+                                            Connect with me
+                                            <ArrowTopRightIcon
+                                                width={18}
+                                                height={18}
+                                                className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                            />
+                                        </a>
+                                    </Button>
+
+                                    <Button
+                                        variant="outline"
+                                        className="px-6 py-5 border-neutral-700 dark:border-white/40"
+                                    >
+                                        <a
+                                            target="_blank"
+                                            href="https://drive.google.com/file/d/1MU7ha8DnVSH2nCbZ5SbFYlQwvPGpag5z/view?usp=sharing"
+                                            className="text-[15px]"
+                                        >
+                                            Download resume
+                                        </a>
+                                    </Button>
+                                </div>
                             </BlurFade>
                         </div>
-                        <BlurFade delay={0.25 * 1.5} inView className='max-md:order-1 max-md:mb-3 max-md:flex max-md:justify-center'>
-                            <Image width={200} height={200} className='rounded-[50%]' alt='Manas Khandelwal' src='https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/66fee35900198be05b99/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin'></Image>
+
+                        {/* Right Image */}
+                        <BlurFade delay={0.5} inView className="flex justify-center">
+                            <div className="relative">
+                                <div className="absolute inset-0 rounded-full bg-violet-500/20 blur-2xl -z-10" />
+                                <Image
+                                    width={220}
+                                    height={220}
+                                    className="rounded-full border border-neutral-200 dark:border-neutral-800"
+                                    alt="Manas Khandelwal"
+                                    src="https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/66fee35900198be05b99/view?project=66fee2e7001c9368dff3&mode=admin"
+                                />
+                            </div>
                         </BlurFade>
                     </div>
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

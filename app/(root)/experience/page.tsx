@@ -1,16 +1,19 @@
-import React from 'react'
-import { Metadata } from 'next';
-import Image from 'next/image';
-import experiences from '@/assets/json/Experiences.json'
-import { cn } from '@/lib/utils';
-import Script from 'next/script';
+import React from "react";
+import { Metadata } from "next";
+import Image from "next/image";
+import experiences from "@/assets/json/Experiences.json";
+import Script from "next/script";
+
 export const metadata: Metadata = {
-    title: "Experience",
-    description: "Work experience of Manas Khandelwal as a frontend developer in web and mobile application development.",
+    title: "Experience | Manas Khandelwal",
+    description:
+        "Professional experience of Manas Khandelwal as a frontend developer building scalable web and mobile applications.",
 };
-function page() {
+
+export default function Page() {
     return (
         <>
+            {/* JSON-LD */}
             <Script
                 id="experience-jsonld"
                 type="application/ld+json"
@@ -27,49 +30,76 @@ function page() {
                 }}
             />
 
-            <section className='py-10'>
-                <div className="container">
-                    <div className='max-md:text-center'>
-                        <h1 className='text-4xl font-albert-sans font-bold'>Experience</h1>
+            {/* Header */}
+            <section className="py-24">
+                <div className="container px-4">
+                    <div className="mb-14 text-center md:text-left">
+                        <h1 className="text-4xl md:text-5xl font-bold font-albert-sans">
+                            Experience
+                        </h1>
+                        <p className="mt-4 max-w-2xl text-neutral-600 dark:text-neutral-400">
+                            A timeline of my professional journey, roles, and contributions
+                            across web and mobile application development.
+                        </p>
                     </div>
-                </div>
-            </section>
-            <section className="">
-                <div className="container">
-                    <div className="border rounded  dark:border-slate-700 border-slate-400 md:px-10 md:py-3 p-4 mb-5">
-                        {experiences.map((exp, index) => (
-                            <div key={index} className={cn("md:py-7 py-4", experiences.length > index + 1 ? 'border-b' : '')}>
-                                <div className="flex justify-between mb-2 items-start">
-                                    <div className="flex gap-3 w-full items-center">
-                                        <div>
-                                            <Image className="border border-slate-500 rounded-sm aspect-square" src={exp.companyLogo} alt={`${exp.company} logo`} width={60} height={60}
+
+                    {/* Timeline */}
+                    <div className="relative pl-8">
+                        {/* Vertical Line */}
+                        <div className="absolute left-0 top-0 h-full w-[2px] bg-neutral-300 dark:bg-neutral-700" />
+
+                        <div className="space-y-14">
+                            {experiences.map((exp, index) => (
+                                <div key={index} className="relative">
+                                    {/* Dot */}
+                                    <span className="absolute -left-[31px] top-6 -translate-x-1/2 h-4 w-4 rounded-full bg-violet-500 shadow-[0_0_0_6px_rgba(139,92,246,0.15)]" />
+
+                                    {/* Card */}
+                                    <div className="relative rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 md:p-7">
+                                        {/* Header */}
+                                        <div className="flex gap-4 items-start">
+                                            <Image
+                                                src={exp.companyLogo}
+                                                alt={`${exp.company} logo`}
+                                                width={56}
+                                                height={56}
+                                                className="rounded-md border border-neutral-300 dark:border-neutral-700 bg-white"
                                             />
-                                        </div>
-                                        <div className="flex justify-between w-full max-md:flex-col">
-                                            <div>
-                                                <h2 className="font-bold md:text-xl text-md">{exp.jobTitle}</h2>
-                                                <p className="text-sm font-medium">{`${exp.company} – ${exp.location}`}</p>
+
+                                            <div className="flex-1">
+                                                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1">
+                                                    <h2 className="text-lg md:text-xl font-semibold">
+                                                        {exp.jobTitle}
+                                                    </h2>
+                                                    <span className="text-sm font-medium text-neutral-500">
+                                                        {exp.period}
+                                                    </span>
+                                                </div>
+                                                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                                                    {exp.company} · {exp.location}
+                                                </p>
                                             </div>
-                                            <div>
-                                                <p className="text-sm font-semibold">{exp.period}</p>
-                                            </div>
                                         </div>
+
+                                        {/* Responsibilities */}
+                                        <ul className="mt-5 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+                                            {exp.responsibilities.map((item, i) => (
+                                                <li
+                                                    key={i}
+                                                    className={i === 0 ? "list-none font-medium" : "list-disc list-inside"}
+                                                >
+                                                    {item}
+                                                </li>
+                                            ))}
+                                        </ul>
+
                                     </div>
                                 </div>
-                                <div>
-                                    <ul className='list-group'>
-                                        {exp.responsibilities.map((e, id) => (
-                                            <li key={id} className={`mb-2 list-group-item ${id != 0 ? 'list-disc ms-5' : ''}`}>{e}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
         </>
-    )
+    );
 }
-
-export default page

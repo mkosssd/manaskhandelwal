@@ -1,89 +1,178 @@
 [
     {
-        "projectImage": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b2e3e0001b47e1f76/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
-        "projectName": "AnyWhere App - An Ecommerce Site",
-        "skills": "Angular, Bootstrap, HTML, SCSS, Firebase",
-        "description": "Anywhere App is a feature-rich E-commerce website designed using Angular, delivering a mobile-responsive and user-friendly shopping experience. The application incorporates Firebase for backend services and Bootstrap for a polished, responsive UI.",
-        "points": [
-            {
-                "name": "Product Browsing",
-                "description": "Offers an intuitive interface to explore a wide range of products."
-            },
-            {
-                "name": "Advanced Filters",
-                "description": "Enables users to filter products by price (low to high or high to low) and categories."
-            },
-            {
-                "name": "Responsive Design",
-                "description": "Built with Bootstrap to ensure a seamless experience across devices."
-            },
-            {
-                "name": "Shopping Cart",
-                "description": "Includes a cart feature stored in local storage for uninterrupted shopping sessions."
-            },
-            {
-                "name": "User Authentication",
-                "description": "Features secure login and registration modules with separate pages for each."
-            },
-            {
-                "name": "Firebase Integration",
-                "description": "Utilizes Firebase for scalable backend services, including real-time database and authentication."
-            },
-            {
-                "name": "Admin Panel",
-                "description": "Provides administrators with tools to add, edit, or delete products efficiently."
-            }
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/697f277e00078696c221/view?project=66fee2e7001c9368dff3",
+        "projectName": "FinJ Partner App",
+        "company": "Tractor Junction",
+        "skills": "React Native, TypeScript, Context API, Axios, Tanstack Query",
+        "description": "FinJ Partner App is a React Native application that enables partners to manage and track vehicle loan leads efficiently. The app allows users to submit leads to FinJ or handle them independently, track lead status from submission to disbursement, and earn payouts on successful loans, streamlining lead management and revenue tracking.",
+        "category": "Production",
+        "summaryPoints": [
+            "Lead management & status tracking",
+            "Performance analytics dashboard",
+            "Secure authentication & role-based access"
         ],
         "urls": [
             {
-                "label": "AnyWhere App",
-                "url": "https://anywhere-ecom.netlify.app/"
+                "label": "Play Store",
+                "url": "https://play.google.com/store/apps/details?id=com.finjpartnerapp&pcampaignid=web_share",
+                "type": "playstore"
             },
             {
-                "label": "Admin Panel AnyWhere App",
-                "url": "https://admin-anywhere.netlify.app/"
+                "label": "App Store",
+                "url": "https://apps.apple.com/in/app/finjpartnerapp/id6749674345",
+                "type": "appstore"
             }
         ]
     },
     {
-        "projectImage": "https://cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b2e31003db029ed14/view?project=66fee2e7001c9368dff3&project=66fee2e7001c9368dff3&mode=admin",
-        "projectName": "MindShare - Social Media Site ",
-        "skills": "Angular, Bootstrap, HTML, SCSS, Firebase",
-        "description": "MindShare is a Social Media Application built using Angular, offering a dynamic and interactive user experience. The application leverages Firebase for backend services and focuses on seamless engagement and customization for users.",
-        "points": [
-            {
-                "name": "User Authentication",
-                "description": "Features secure login and registration modules powered by Firebase Authentication."
-            },
-            {
-                "name": "Customizable User Profiles",
-                "description": "Allows users to personalize their profiles with ease."
-            },
-            {
-                "name": "Photo Upload and Storage",
-                "description": "Integrated Firebase Storage for uploading and storing images."
-            },
-            {
-                "name": "Responsive Design",
-                "description": "Built with Angular and Bootstrap for an intuitive and visually appealing interface."
-            },
-            {
-                "name": "Real-Time Data Handling",
-                "description": "Utilizes Firebase for APIs and data storage, ensuring fast and reliable interaction."
-            },
-            {
-                "name": "Firebase Integration",
-                "description": "Utilizes Firebase for scalable backend services, including real-time database and authentication."
-            }
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/697f55a800330ab23f8d/view?project=66fee2e7001c9368dff3",
+        "projectName": "FinJ App",
+        "company": "Tractor Junction",
+        "category": "Production",
+        "skills": "React Native, TypeScript, Context API, Axios, Webview",
+        "description": "FinJ is India's largest Rural vehicle lending fintech platform. Through our state-of-the-art tech stack, we promise to introduce a whole new world of financing to our users. We make new-age & omni-channel digital experiences possible. Through our partnerships with leading banks and NBFCs, we aspire to bring alternate financial products to own an automobile.",
+        "summaryPoints": [
+            "Product & category management",
+            "Role-based admin access",
+            "Real-time Firebase integration"
         ],
         "urls": [
             {
-                "label": "AnyWhere App",
-                "url": "https://anywhere-ecom.netlify.app/"
+                "label": "Play Store",
+                "url": "https://play.google.com/store/apps/details?id=com.finj.app&pcampaignid=web_share",
+                "type": "playstore"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/697f537e000ea4e0ff9c/view?project=66fee2e7001c9368dff3&mode=admin",
+        "category": "Production",
+        "company": "Tractor Junction",
+        "projectName": "TruckJunction: Buy/Sell Trucks",
+        "skills": "React Native, TypeScript, Redux, Axios",
+        "description": "Truck Junction App is a commercial vehicle marketplace that enables users to buy new trucks, sell used trucks, and compare models across leading brands like Tata and Ashok Leyland. The app provides detailed pricing, specifications, valuations, and permit information, helping users make informed decisions through a reliable, time-saving, and user-friendly platform.",
+        "summaryPoints": [
+            "Product & category management",
+            "Role-based admin access",
+            "Real-time Firebase integration"
+        ],
+        "urls": [
+            {
+                "label": "Play Store",
+                "url": "https://play.google.com/store/apps/details?id=com.truckjunction&pcampaignid=web_share",
+                "type": "playstore"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/697f57af0000a0b7fa5a/view?project=66fee2e7001c9368dff3&mode=admin",
+        "projectName": "Cardealerships.com",
+        "company": "Success Ladder Technologies",
+        "category": "Production",
+        "skills": "Angular, Bootstrap, SCSS, TypeScript",
+        "description": "Cardealerships.com is an online marketplace that connects car buyers with local dealerships across the United States. The platform allows users to search new and used vehicles, research and compare car models, locate nearby dealerships, and sell their cars through a seamless and user-friendly experience.",
+        "summaryPoints": [
+            "Product & category management",
+            "Role-based admin access",
+            "Real-time Firebase integration"
+        ],
+        "urls": [
+            {
+                "label": "Live Website",
+                "url": "https://cardealerships.com/",
+                "type": "live"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/697f57af0000a0b7fa5a/view?project=66fee2e7001c9368dff3&mode=admin",
+        "projectName": "Business Listing - Cardealerships.com",
+        "skills": "Angular, Bootstrap, SCSS, TypeScript",
+        "company": "Success Ladder Technologies",
+        "description": "The Cardealerships.com Admin Panel enables dealerships to manage inventory, update dealership information, access marketing tools, and connect efficiently with potential customers. It provides a centralized dashboard to monitor listings, handle inquiries, and optimize dealership visibility. The platform helps dealerships streamline operations, improve lead management, and drive higher customer engagement.",
+        "category": "Production",
+        "summaryPoints": [
+            "Product & category management",
+            "Role-based admin access",
+            "Real-time Firebase integration"
+        ],
+        "urls": [
+            {
+                "label": "Live Website",
+                "url": "https://business.cardealerships.com/",
+                "type": "live"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/697f88d00033b47686f3/view?project=66fee2e7001c9368dff3",
+        "projectName": "Aora",
+        "skills": "Expo, React Native, TypeScript, Appwrite",
+        "category": "Side Project",
+        "description": "Aora is a social media application developed as a side project using React Native, focusing on component-driven architecture, state management, and responsive UI to deliver a smooth and engaging mobile experience.",
+        "summaryPoints": [
+            "Product browsing & smart filters",
+            "Cart & user authentication",
+            "Admin panel for product management"
+        ],
+        "urls": [
+            {
+                "label": "Github Repo",
+                "url": "https://github.com/mkosssd/aora",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b2e3e0001b47e1f76/view?project=66fee2e7001c9368dff3",
+        "projectName": "AnyWhere App – Ecommerce Platform",
+        "skills": "Angular, Bootstrap, SCSS, Firebase",
+        "category": "Side Project",
+        "description": "A full-featured e-commerce platform built with Angular, offering a seamless and mobile-responsive shopping experience. The application supports product discovery, smart filtering, cart management, user authentication, and an admin panel for efficient product and data management, powered by Firebase for real-time backend services.",
+        "summaryPoints": [
+            "Product browsing & smart filters",
+            "Cart & user authentication",
+            "Admin panel for product management"
+        ],
+        "urls": [
+            {
+                "label": "Live Website",
+                "url": "https://anywhere-ecom.netlify.app/",
+                "type": "live"
             },
             {
-                "label": "Admin Panel AnyWhere App",
-                "url": "https://admin-anywhere.netlify.app/"
+                "label": "Admin Panel",
+                "url": "https://admin-anywhere.netlify.app/",
+                "type": "admin"
+            },
+            {
+                "label": "Github Repo",
+                "url": "https://github.com/mkosssd/eCom_Admin_Panel",
+                "type": "github"
+            },
+            {
+                "label": "Github Repo - Admin Panel",
+                "url": "https://github.com/mkosssd/Anywhere_Ecom_Backend",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "projectImage": "https://fra.cloud.appwrite.io/v1/storage/buckets/66fee2f7002f815b7690/files/675b2e31003db029ed14/view?project=66fee2e7001c9368dff3",
+        "projectName": "MindShare – Social Media App",
+        "skills": "Angular, Bootstrap, SCSS, Firebase",
+        "description": "A social media platform enabling user profiles, posts, and real-time interactions.",
+        "category": "Side Project",
+        "summaryPoints": [
+            "User authentication & profiles",
+            "Post creation & image uploads",
+            "Real-time data updates"
+        ],
+        "urls": [
+            {
+                "label": "Live Website",
+                "url": "https://anywhere-ecom.netlify.app/",
+                "type": "live"
             }
         ]
     }

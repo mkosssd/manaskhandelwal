@@ -1,18 +1,22 @@
-import React from 'react'
-import { Metadata } from 'next';
-import { CustomIconCloud } from '@/components/CustomIconCloud';
-import { Button } from '@/components/ui/button';
-import { ArrowTopRightIcon } from '@radix-ui/react-icons';
-import skills from '@/assets/json/skills.json'
-import { Badge } from '@/components/ui/badge';
-import Script from 'next/script';
+import React from "react";
+import { Metadata } from "next";
+import { CustomIconCloud } from "@/components/CustomIconCloud";
+import { Button } from "@/components/ui/button";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import skills from "@/assets/json/skills.json";
+import { Badge } from "@/components/ui/badge";
+import Script from "next/script";
+
 export const metadata: Metadata = {
-    title: "About Me",
-    description: "Frontend developer with experience in React, React Native, and Angular, focused on building scalable, high-performance web and mobile applications.",
+title: "About Me",
+    description:
+        "About Manas Khandelwal, a frontend developer specializing in React Native, Angular, and modern web and mobile application development.",
 };
-function page() {
+
+export default function Page() {
     return (
         <>
+            {/* JSON-LD */}
             <Script
                 id="about-jsonld"
                 type="application/ld+json"
@@ -24,65 +28,99 @@ function page() {
                         name: "About Manas Khandelwal",
                         url: "https://manas-khandelwal.vercel.app/about",
                         description:
-                            "About Manas Khandelwal, a frontend developer with experience in modern web and mobile technologies.",
+                            "About Manas Khandelwal, a frontend developer experienced in modern web and mobile technologies.",
                     }),
                 }}
             />
 
-            <div className='py-8'>
-                <section className='max-md:mb-7'>
-                    <div className="container">
-                        <div className='max-md:text-center'>
-                            <h1 className='text-4xl font-albert-sans font-bold'>About Me</h1>
-                        </div>
+            {/* Page Wrapper */}
+            <section className="py-20">
+                <div className="container px-4">
+
+                    {/* Header */}
+                    <div className="mb-12 text-center md:text-left">
+                        <h1 className="text-4xl md:text-5xl font-bold font-albert-sans">
+                            About Me
+                        </h1>
+                        <p className="mt-3 text-neutral-600 dark:text-neutral-400 max-w-2xl">
+                            A quick look into my journey, skills, and passion for building
+                            modern web and mobile applications.
+                        </p>
                     </div>
-                </section>
-                <section>
-                    <div className="container">
-                        <div className="flex flex-wrap items-center ">
-                            <div className="w-full md:w-1/2 md:text-start text-justify">
-                                <p className='para'>
-                                    Hi, I&apos;m Manas Khandelwal, a dedicated frontend developer passionate about crafting scalable, responsive, and user-friendly applications. With hands-on experience in technologies like React Native, Angular, React, TypeScript, and Bootstrap, I focus on delivering dynamic solutions that seamlessly balance design and functionality.
-                                </p>
-                                <p className='para'>
-                                    My journey in web and mobile development began with a strong interest in building clean, intuitive user interfaces. Over the past year, I’ve contributed to diverse projects, including e-commerce platforms and social media applications, leveraging modern frameworks to optimize performance and enhance user experiences. These experiences have strengthened my ability to collaborate with cross-functional teams and deliver impactful products.
-                                </p>
 
-                            </div>
-                            <div className="w-full md:w-1/2">
-                                <div className='w-100 flex justify-center' >
-                                    <CustomIconCloud />
-                                </div>
-                            </div>
-                        </div>
-                        <div className=' md:text-start text-justify mb-8'>
-                            <p className='para'>
-                                I’m always eager to explore emerging technologies and refine my development skills. Recently, I’ve been working extensively with React Native, delving deeper into Next.js and Tailwind CSS to optimize the performance and design of my projects. Whether collaborating within a team or handling projects independently, I am dedicated to delivering impactful, high-quality solutions.
-                            </p>
-                            <p className='para'>
-                                Beyond coding, I stay updated on the latest trends in web and mobile development. My passion for continuous learning and problem-solving has fueled my growth as a developer.
-                            </p>
-                            <p className='para'>
-                                Let’s connect and create something exceptional together!
+                    {/* Main Content */}
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        {/* Text */}
+                        <div className="space-y-5 text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                            <p>
+                                Hi, I’m <strong>Manas Khandelwal</strong>, a frontend developer
+                                passionate about crafting scalable, responsive, and
+                                user-friendly applications. I work extensively with
+                                <strong> React Native, Angular, React, and TypeScript</strong>,
+                                focusing on clean architecture and intuitive user experiences.
                             </p>
 
-                            <Button className='px-6 py-5 group'>
-                                <a rel='nofollow' className='flex align-middle text-[15px]' target='_blank' href="https://www.linkedin.com/in/manaskh">Connect with me <ArrowTopRightIcon width={18} height={18} className='transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-1 ' /></a>
+                            <p>
+                                Over the past year, I’ve worked on diverse real-world projects
+                                including fintech platforms, ecommerce applications, and social
+                                media products. These experiences have strengthened my ability
+                                to collaborate with cross-functional teams and deliver
+                                performance-focused solutions.
+                            </p>
+
+                            <p>
+                                Recently, I’ve been deepening my expertise in React Native while
+                                exploring Next.js and Tailwind CSS to build faster, more
+                                scalable interfaces. I enjoy both team collaboration and
+                                independent ownership of features.
+                            </p>
+
+                            <p>
+                                Beyond coding, I stay actively updated with industry trends and
+                                continuously refine my problem-solving skills.
+                            </p>
+
+                            <Button className="mt-4 px-6 py-5 group">
+                                <a
+                                    href="https://www.linkedin.com/in/manaskh"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    className="flex items-center text-[15px]"
+                                >
+                                    Let’s connect
+                                    <ArrowTopRightIcon
+                                        width={18}
+                                        height={18}
+                                        className="ml-1 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                    />
+                                </a>
                             </Button>
                         </div>
-                        <div className='my-3'>
-                            <h2 className='font-bold mb-2 text-xl'>Skills I&apos;ve Got:</h2>
+
+                        {/* Visual */}
+                        <div className="flex justify-center">
+                            <CustomIconCloud />
+                        </div>
+                    </div>
+
+                    {/* Skills */}
+                    <div className="mt-16">
+                        <h2 className="text-2xl font-semibold mb-4">
+                            Skills & Technologies
+                        </h2>
+                        <div className="flex flex-wrap gap-3">
                             {skills.map((skill, index) => (
-                                <Badge className='px-4 md:me-2 me-4 md:mb-2 mb-3 text-[12px] font-semibold capitalize' key={index}>{skill}</Badge>
+                                <Badge
+                                    key={index}
+                                    className="px-4 py-1.5 text-xs font-medium capitalize"
+                                >
+                                    {skill}
+                                </Badge>
                             ))}
                         </div>
-
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </>
-
-    )
+    );
 }
-
-export default page

@@ -1,59 +1,69 @@
 'use client';
+
 import Link from "next/link";
 import React, { useState } from "react";
 import ActiveLink from "./ActiveLink";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
     return (
-        <header>
-            <div className="shadow dark:shadow-white/20  mx-auto backdrop-blur-sm " >
-                <div className="container" >
-                    <div className="flex h-16">
-                        <div className="flex w-full justify-between ">
-                            <Link href="/" className="flex-shrink-0 flex items-center text-xl font-bold">
-                                <span className="dark:text-white text-black">Manas Khandelwal</span>
-                            </Link>
-                            <div className="hidden lg:flex lg:ml-6 lg:space-x-8 fl">
-                                <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                                    <ActiveLink href="/about-me">About Me</ActiveLink>
-                                    {/* <ActiveLink href="/projects">Projects</ActiveLink> */}
-                                    <ActiveLink href="/experience">Experience</ActiveLink>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="flex items-center lg:hidden">
-                            <button
-                                type="button"
-                                className="text-gray-700 hover:text-blue-500 focus:outline-none focus:text-blue-500"
-                                onClick={toggleMenu}
-                            >
-                                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+        <header className="sticky top-0 z-50">
+            {/* Top Bar */}
+            <div className="backdrop-blur-md bg-white/70 dark:bg-black/50 border-b border-neutral-200 dark:border-neutral-800">
+                <div className="container px-4">
+                    <div className="flex h-16 items-center justify-between">
+                        {/* Logo */}
+                        <Link
+                            href="/"
+                            className="text-lg font-semibold tracking-tight"
+                        >
+                            <span className="text-black dark:text-white">
+                                Manas Khandelwal
+                            </span>
+                        </Link>
 
+                        {/* Desktop Nav */}
+                        <nav className="hidden lg:flex">
+                            <ul className="flex items-center gap-8 text-sm font-medium">
+                                <ActiveLink href="/about-me">About</ActiveLink>
+                                <ActiveLink href="/projects">Projects</ActiveLink>
+                                <ActiveLink href="/experience">Experience</ActiveLink>
+                            </ul>
+                        </nav>
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="lg:hidden p-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+                            aria-label="Toggle Menu"
+                        >
+                            {isOpen ? <X size={20} /> : <Menu size={20} />}
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            {isOpen && (
-                <div className="lg:hidden">
-                    <div className="px-2 pt-2 pb-3 space-y-1 bg-black">
-                        <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 lg:mt-0">
-                            <ActiveLink href="/about-me">About Me</ActiveLink>
-                            {/* <ActiveLink href="/projects">Projects</ActiveLink> */}
-                            <ActiveLink href="/experience">Experience</ActiveLink>
-                        </ul>
-                    </div>
+            {/* Mobile Menu */}
+            <div
+                className={`lg:hidden overflow-hidden transition-all duration-300
+                ${isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}
+            >
+                <div className="bg-white dark:bg-black border-b border-neutral-200 dark:border-neutral-800">
+                    <ul className="flex flex-col px-6 py-4 gap-4 text-sm font-medium" onClick={() => setIsOpen(false)}>
+                        <ActiveLink href="/about-me">
+                            About
+                        </ActiveLink>
+                        <ActiveLink href="/projects">
+                            Projects
+                        </ActiveLink>
+                        <ActiveLink href="/experience">
+                            Experience
+                        </ActiveLink>
+                    </ul>
                 </div>
-            )}
+            </div>
         </header>
     );
 };

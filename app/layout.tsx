@@ -19,7 +19,7 @@ const albertSans = Albert_Sans({
 export const metadata: Metadata = {
     title: {
         default: "Manas Khandelwal | Frontend Developer",
-        template: "%s | Manas Khandelwal",
+        template: "%s | Manas Khandelwal – Frontend & React Native Developer",
     },
     description:
         "Personal portfolio of Manas Khandelwal, a frontend developer working with modern web and mobile technologies.",
