@@ -34,7 +34,7 @@ export default function Page() {
             />
 
             {/* Page Wrapper */}
-            <section className="py-20">
+            <section className="py-16">
                 <div className="container px-4">
 
                     {/* Header */}

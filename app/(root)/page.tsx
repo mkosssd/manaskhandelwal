@@ -1,4 +1,5 @@
 import skills from "@/assets/json/skills.json";
+import { SkillsStrip } from "@/components/SkillsStrip";
 import BlurFade from "@/components/ui/blur-fade";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
@@ -183,6 +184,7 @@ const Home = () => {
                         </BlurFade>
                     </div>
                 </div>
+                <SkillsStrip />
             </section>
         </>
     );

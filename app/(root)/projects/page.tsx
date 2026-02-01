@@ -11,7 +11,7 @@ export default function Page() {
     return (
         <>
             {/* Header */}
-            <section className="py-24">
+            <section className="py-16">
                 <div className="container px-4">
                     <div className="max-w-3xl">
                         <h1 className="text-4xl md:text-5xl font-bold font-albert-sans">
