@@ -58,7 +58,7 @@ const Home = () => {
                             <BlurFade delay={0.35} inView>
                                 <h1 className="font-albert-sans font-bold tracking-tight">
                                     <span className="block text-3xl md:text-4xl">
-                                        Hey, I’m
+                                        Hey, I’m{" "}
                                     </span>
                                     <span className="block text-4xl sm:text-5xl xl:text-6xl text-[#937ee9]">
                                         Manas Khandelwal
