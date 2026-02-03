@@ -16,5 +16,7 @@ export const ProjectsMetadata: Metadata = {
         "admin panel development",
         "mobile app developer india"
     ],
-
+    alternates: {
+        canonical: `/projects`,
+    },
 };

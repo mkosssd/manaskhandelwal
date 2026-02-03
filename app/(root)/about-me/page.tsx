@@ -8,9 +8,12 @@ import { Badge } from "@/components/ui/badge";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-title: "About Me",
+    title: "About Me",
     description:
         "About Manas Khandelwal, a frontend developer specializing in React Native, Angular, and modern web and mobile application development.",
+    alternates: {
+        canonical: `/about-me`,
+    },
 };
 
 export default function Page() {

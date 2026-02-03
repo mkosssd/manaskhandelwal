@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     title: "Experience | Manas Khandelwal",
     description:
         "Professional experience of Manas Khandelwal as a frontend developer building scalable web and mobile applications.",
+    alternates: {
+        canonical: `/experience`,
+    },
 };
 
 export default function Page() {
