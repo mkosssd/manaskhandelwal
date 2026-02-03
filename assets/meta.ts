@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const ProjectsMetadata: Metadata = {
     title: "Projects",
     description:
-        "Explore production and side projects by Manas Khandelwal, featuring frontend and React Native apps, fintech platforms, ecommerce sites, and admin dashboards.",
+        "Explore production and side projects, featuring frontend and React Native apps, fintech platforms, ecommerce sites, and admin dashboards.",
 
     keywords: [
         "Manas Khandelwal",

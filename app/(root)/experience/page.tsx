@@ -5,7 +5,7 @@ import experiences from "@/assets/json/Experiences.json";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-    title: "Experience | Manas Khandelwal",
+    title: "Experience",
     description:
         "Professional experience of Manas Khandelwal as a frontend developer building scalable web and mobile applications.",
     alternates: {
