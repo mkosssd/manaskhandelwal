@@ -97,7 +97,7 @@ const Home = () => {
                                 <div className="mt-6 flex gap-6 max-md:justify-center text-sm text-neutral-600 dark:text-neutral-400">
                                     <div>
                                         <span className="block text-lg font-semibold text-neutral-900 dark:text-white">
-                                            2+
+                                            3+
                                         </span>
                                         <span>Years Experience</span>
                                     </div>
